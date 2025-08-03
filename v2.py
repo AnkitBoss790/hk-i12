@@ -53,7 +53,7 @@ async def create_vps_with_os(ctx, os_type, memory, cpu, username, expiry=None):
         return
 
     if not os.path.exists(DOCKERFILE_PATH):
-        await ctx.send("Dockerfile not found. Please ensure Dockerfile (2).txt exists.")
+        await ctx.send("Dockerfile not found. Please ensure Dockerfile.txt exists.")
         return
 
     vps_id = str(uuid.uuid4())[:8].upper()
